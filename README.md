@@ -1,6 +1,6 @@
 # sql-demonstration
 
-> Contains a set of sql commands to recreate a sample table and read specific data from it.
+> Contains SQL commands to recreate a sample table and read specific data from it.
 
 ## Getting Started
 
