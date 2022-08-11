@@ -241,31 +241,16 @@ WHERE
     AND animals.escape_attempts = 0;
 
 -- Who owns the most animals?
-SELECT
-    MAX(number_of_animals_owned)
-FROM
-    (
-        SELECT
-            owners.full_name as owner_name,
-            count(*) as number_of_animals_owned
-        FROM
-            animals
-            INNER JOIN owners ON owners.id = animals.owner_id
-        GROUP BY
-            owners.full_name
-    ) AS foo;
 
 SELECT
-    owners.full_name as owner_name,
-    animals_owned
+    owners.full_name as most_animals_owner,
+    count(*) as animals_owned
 FROM
     owners
-    INNER JOIN (
-        SELECT
-            count(*) as animals_owned,
-            owner_id
-        FROM
-            animals
-        GROUP BY
-            animals.owner_id
-    ) as foo ON owners.id = foo.owner_id;
+    INNER JOIN animals ON owners.id = animals.owner_id
+GROUP BY
+    owners.full_name
+ORDER BY
+    animals_owned DESC
+LIMIT
+    1;
