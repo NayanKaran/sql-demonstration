@@ -70,6 +70,8 @@ CREATE TABLE visits(
     PRIMARY KEY (animal_id, vet_id, date_of_visit)
 );
 
+-- Schema changes for database performance audit
+
 ALTER TABLE visits
   DROP CONSTRAINT visits_pkey;
 
