@@ -19,6 +19,13 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - Twitter: [@bapidebabrata](https://twitter.com/bapidebabrata)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/debabrata-mandal-83461696/)
 
+👤 **ibrahim naseer**
+
+I am an aspiring web developer from pakistan.
+- GitHub: [@ibrahimgit](https://github.com/ibrahim777764)
+- Twitter: [Ibrahimtwit](https://twitter.com/Ibrahim66650696)
+- LinkedIn: [@ibrahimlin](https://www.linkedin.com/in/ibrahim-naseer-215667225/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
