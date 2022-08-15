@@ -70,4 +70,18 @@ CREATE TABLE visits(
     PRIMARY KEY (animal_id, vet_id, date_of_visit)
 );
 
-ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+ALTER TABLE visits
+  DROP CONSTRAINT visits_pkey;
+
+ALTER TABLE owners ALTER COLUMN age DROP NOT NULL;
+
+ALTER TABLE
+    owners
+ADD
+    COLUMN email VARCHAR(120);
+
+CREATE INDEX animal_id ON visits (animal_id);
+
+CREATE INDEX vet_id ON visits (vet_id);
+
+CREATE INDEX owner_email ON owners (email);
